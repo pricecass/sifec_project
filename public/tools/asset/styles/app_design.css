@@ -1,0 +1,75 @@
+
+.chargement {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color:#F0F8FF;
+    /*background: url('../images/Preloader_3.gif') 50% 50% no-repeat rgb(255, 255, 255);*/
+
+}
+
+.loader5 {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    /*background: url('../images/Preloader_3.gif') 50% 50% no-repeat rgb(255, 255, 255);*/
+}
+
+.loader1{
+    width:70px;
+    height:70px;
+    display: inline-block;
+    vertical-align: middle;
+    position:relative;
+    right:0;
+    /*z-index: 1;*/
+}
+.loader-quart{
+    border-radius: 50px;
+    border:3px solid transparent;
+    border-top-color:green ;
+    animation: spin 1s linear infinite;
+}
+.loader-quart:after{
+    content: '';
+    position:absolute;
+    top:5px; left:5px;
+    bottom:5px;
+    right:5px;
+    border-radius: 70px;
+    border:3px solid transparent;
+    border-top-color:yellow;
+    opacity: 0.8;
+    animation: spin 5s linear infinite;
+}
+.loader-quart:before{
+    content: '';
+    position:absolute;
+    top:12px; left:10px;
+    bottom:12px;
+    right:12px;
+    border-radius: 50px;
+    border:3px solid transparent;
+    border-top-color:red;
+    opacity: 0.5;
+    animation: spin 3s linear infinite;
+}
+@keyframes spin {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.lineEspace
+{
+    height:20px;
+}
+
+
+
+

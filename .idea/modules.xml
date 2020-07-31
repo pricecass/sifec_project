@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/sifec.iml" filepath="$PROJECT_DIR$/.idea/sifec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../webreatheIOT/.idea/webreatheIOT.iml" filepath="$PROJECT_DIR$/../webreatheIOT/.idea/webreatheIOT.iml" />
+    </modules>
+  </component>
+</project>

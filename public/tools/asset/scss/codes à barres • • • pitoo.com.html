@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://www.pitoo.com/codes-a-barres-p3 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+	
+	<title>codes à barres • • • pitoo.com</title>
+	
+	<meta name="description" content="Pitoo.com, rubik&#39;s cube et développement Web">
+	<meta name="keywords" content="developpeur php,rubiks cube,codes a barres,trucs et astuces web,blog cinema,blog militant">
+	
+	<link rel="stylesheet" type="text/css" href="./codes à barres • • • pitoo.com_files/compress-css.php">
+
+    <script type="text/javascript" async="" src="./codes à barres • • • pitoo.com_files/ga.js.téléchargement"></script><script type="text/javascript" src="./codes à barres • • • pitoo.com_files/swfobject.js.téléchargement"></script>
+
+    <script type="text/javascript" src="./codes à barres • • • pitoo.com_files/jquery.min.js.téléchargement"></script>
+
+	<script type="text/javascript" src="./codes à barres • • • pitoo.com_files/jquery.easing.1.3.js.téléchargement"></script> 
+	<script type="text/javascript" src="./codes à barres • • • pitoo.com_files/jquery.hoverIntent.minified.js.téléchargement"></script> 
+    
+	<link rel="stylesheet" type="text/css" href="./codes à barres • • • pitoo.com_files/jquery.fancybox-1.3.4.css" media="screen">
+    <script type="text/javascript" src="./codes à barres • • • pitoo.com_files/jquery.fancybox-1.3.4.pack.js.téléchargement"></script>
+
+    <link href="./codes à barres • • • pitoo.com_files/diapo.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="./codes à barres • • • pitoo.com_files/diapo.min.js.téléchargement"></script> 
+	
+	<link href="./codes à barres • • • pitoo.com_files/shCoreDefault.css" rel="stylesheet" type="text/css">
+	<link href="./codes à barres • • • pitoo.com_files/shThemeDefault.css" rel="stylesheet" type="text/css">
+	<script src="./codes à barres • • • pitoo.com_files/shCore.js.téléchargement" type="text/javascript"></script>
+	<script src="./codes à barres • • • pitoo.com_files/shBrushPhp.js.téléchargement" type="text/javascript"></script>
+
+    <script type="text/javascript">
+	
+		var spinner = new Object;
+		
+		function jump(url) { window.location.href=url; }
+		
+		function getElemPos(elem)
+		{
+			var posX = 0;
+			var posY = 0;
+					  
+			while(elem != null) {  //Loop through all of the parents until we get to the top
+				posX += elem.offsetLeft;  //Grab the offset distance from the current element to its parent element
+				posY += elem.offsetTop;
+				elem = elem.offsetParent; //switch to the parent element and repeat
+			}
+											  
+			return { x : posX, y : posY };  //return our object
+		};
+		
+		function loadInDiv(div, url, toggle)
+		{
+			var len = $(div).children().outerHeight();
+			$(div).css('height', len+'px');
+
+			var tmp = $(div).html();
+			
+			if (toggle && tmp) {
+				$(div).stop(true, true).slideUp('fast').empty();
+			} else {
+				$(div).stop(true, true).animate({'opacity':0}, 'fast');
+	
+				$.ajax(
+				{
+					url: url,
+					type: 'GET',
+					cache: false,
+					success: function(rep)
+					{
+						$(div).empty().html(rep);
+						var len2 = $(div).children().outerHeight();
+						$(div).stop(true, true).fadeIn('fast').animate({'opacity':1, 'height': len2+'px'}, 'fast', function(){ $(div).css('height', 'auto'); });
+					}
+				});
+			}
+			return false;
+		}
+		
+		function loadImages(div, typeid)
+		{ 
+			loadInDiv(div, '_load_images.php?id='+typeid); 
+		};
+			
+		function clearDiv(div)
+		{ 
+			$(div).empty(); 
+		};
+		
+		$(document).ready(function() {
+			
+			// Create an image element
+			spinner = $('<img />').attr('src', 'img/spinner.gif');
+			
+			$('#navigation a').hover(
+				function () {
+					$(this).children('span').stop(true, true).animate({'margin-right': '20px'}, 'fast');
+					$(this).children('em').stop(true, true).animate({'opacity': '1'}, 'fast');
+				},
+				function () {
+					$(this).children('span').stop(true, true).animate({'margin-right': '0px'});
+					$(this).children('em').stop(true, true).animate({'opacity': '0.2'});
+				}
+			);
+			
+			$('#q').focus(function () {
+				$(this).stop(true, true).animate({'width': '266px'}, 'fast', function() { $(this).select(); });
+			}).blur(function () {
+				$(this).stop(true, true).animate({'width': '116px'});
+			});
+			
+			$("a.lightbox").fancybox({
+				'speedIn'				:	400, 
+				'speedOut'				:	200, 
+				'hideOnContentClick'	:	true, 
+				'overlayOpacity'		:	'0.6', 
+				'overlayColor'			:	'#000'
+			});
+			
+			$('.flash_embed').each(function() {
+				id = $(this).attr('id');
+				width = $(this).data('width');
+				height = $(this).data('height');
+				movie = $(this).text();
+				flashvars = $(this).data('flashvars');
+				params = $(this).data('params');
+				attributes = $(this).data('attributes');
+				swfobject.embedSWF(movie, id, width, height, '9', 'js/expressInstall.swf', flashvars, params, attributes);
+			});
+			
+		});
+		
+		SyntaxHighlighter.all();
+		
+	</script>
+
+	<script type="text/javascript">
+	
+			
+	</script>
+
+</head>
+
+<body class="accueil">
+
+	<div id="contener" style="">
+		
+		<div id="header">
+    <div id="header_content" style="height:px;">
+
+        <a href="https://www.pitoo.com/" title="retour accueil"><img src="./codes à barres • • • pitoo.com_files/pitoo-maquette-v6_logo.png" id="header_logo"></a>
+        
+        	<ul id="navigation">
+		<li>
+			<a href="https://www.pitoo.com/portfolio-p2">
+				<span style="background-position:0px -34px;"></span>
+				<em>portfolio</em>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.pitoo.com/codes-a-barres-p3">
+				<span style="background-position: -40px -68px; margin-right: 0px;"></span>
+				<em style="opacity: 0.2;">codes à barres</em>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.pitoo.com/rubiks-cube-p4">
+				<span style="background-position: 0px -102px; margin-right: 0px;"></span>
+				<em style="opacity: 0.2;">rubiks cube</em>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.pitoo.com/about-me-p5">
+				<span style="background-position: 0px -136px; margin-right: 0px;"></span>
+				<em style="opacity: 0.2;">about me</em>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.pitoo.com/work-around-b1">
+				<span style="background-position: 0px -170px; margin-right: 0px;"></span>
+				<em style="opacity: 0.2;">work'around</em>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.pitoo.com/les-nerf-a-vif-b2">
+				<span style="background-position: 0px -204px; margin-right: 0px;"></span>
+				<em style="opacity: 0.2;">les nerfs à vif</em>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.pitoo.com/contact">
+				<span style="background-position:0px -238px;"></span>
+				<em>me contacter</em>
+			</a>
+		</li>
+	</ul>
+        
+        <form id="moteur" action="https://www.pitoo.com/resultats" method="get">
+	<fieldset class="styled_form">
+        <input type="text" value="" name="q" id="q" class="single" placeholder="rechercher" required=""> 
+		<button type="submit" id="go">GO</button>
+    </fieldset>
+</form>    
+		    </div>
+</div>
+	
+		<div id="contenu">
+	
+			<div id="contenu_centre">
+                
+                <div class="comm">
+            		
+	
+					
+					<div class="contenu_centre_gauche">
+					
+<a name="article_7"></a>
+<div class="actu_detail rounded">
+<h1 class="titre rounded-top"><span>Php &amp; codes à barres</span></h1><div class="img blog_wide"><img src="./codes à barres • • • pitoo.com_files/page_7_B.jpg"><div style="clear:left;"></div></div>	<div class="corps">
+		<p class="txt">
+			Un script en php qui vous permet de générer des images ou d'insérer dans vos pages web des codes à barres dans les formats suivants :
+<br>
+<br>&nbsp;&nbsp;&nbsp;⋅ Code 128 (Set B et C)
+<br>&nbsp;&nbsp;&nbsp;⋅ Code 25 standard et code 25 Entrelacé
+<br>&nbsp;&nbsp;&nbsp;⋅ Code MSI
+<br>&nbsp;&nbsp;&nbsp;⋅ Code 39
+<br>&nbsp;&nbsp;&nbsp;⋅ Code 11
+<br>&nbsp;&nbsp;&nbsp;⋅ Code KIX
+<br>&nbsp;&nbsp;&nbsp;⋅ Code CMC7
+<br>&nbsp;&nbsp;&nbsp;⋅ Code PostFix
+<br>&nbsp;&nbsp;&nbsp;⋅ Cadabar
+<br>&nbsp;&nbsp;&nbsp;⋅ Code UPC / EAN 8 et 13		</p>
+	</div>
+<div style="clear:left;"></div> 
+</div>
+<hr class="no_hr">
+<a name="article_8"></a>
+<div class="actu_detail rounded">
+<h1 class="titre rounded-top"><span>Utilisation</span></h1>	<div class="corps">
+		<p class="txt">
+			</p><div><div id="highlighter_784481" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="https://www.pitoo.com/codes-a-barres-p3#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div><div class="line number27 index26 alt2">27</div><div class="line number28 index27 alt1">28</div><div class="line number29 index28 alt2">29</div><div class="line number30 index29 alt1">30</div><div class="line number31 index30 alt2">31</div><div class="line number32 index31 alt1">32</div><div class="line number33 index32 alt2">33</div><div class="line number34 index33 alt1">34</div><div class="line number35 index34 alt2">35</div><div class="line number36 index35 alt1">36</div><div class="line number37 index36 alt2">37</div><div class="line number38 index37 alt1">38</div><div class="line number39 index38 alt2">39</div><div class="line number40 index39 alt1">40</div><div class="line number41 index40 alt2">41</div><div class="line number42 index41 alt1">42</div><div class="line number43 index42 alt2">43</div><div class="line number44 index43 alt1">44</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">/* *****************************************</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;</code><code class="php comments">* exemple d'utilisation de pi_barcode.php</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;</code><code class="php comments">* par pitoo.com</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;</code><code class="php comments">* ***************************************** */</code></div><div class="line number5 index4 alt2"><code class="php keyword">include</code><code class="php plain">(</code><code class="php string">'pi_barcode.php'</code><code class="php plain">);</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;</code>&nbsp;</div><div class="line number7 index6 alt2"><code class="php comments">// instanciation</code></div><div class="line number8 index7 alt1"><code class="php variable">$bc</code> <code class="php plain">= </code><code class="php keyword">new</code> <code class="php plain">pi_barcode();</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;</code>&nbsp;</div><div class="line number10 index9 alt1"><code class="php comments">// Le code a générer</code></div><div class="line number11 index10 alt2"><code class="php variable">$bc</code><code class="php plain">-&gt;setCode(</code><code class="php string">'123456789012'</code><code class="php plain">);</code></div><div class="line number12 index11 alt1"><code class="php comments">// Type de code : EAN, UPC, C39...</code></div><div class="line number13 index12 alt2"><code class="php variable">$bc</code><code class="php plain">-&gt;setType(</code><code class="php string">'EAN'</code><code class="php plain">);</code></div><div class="line number14 index13 alt1"><code class="php comments">// taille de l'image (hauteur, largeur, zone calme)</code></div><div class="line number15 index14 alt2"><code class="php comments">//&nbsp;&nbsp;&nbsp; Hauteur mini=15px</code></div><div class="line number16 index15 alt1"><code class="php comments">//&nbsp;&nbsp;&nbsp; Largeur de l'image (ne peut être inférieure a</code></div><div class="line number17 index16 alt2"><code class="php comments">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; l'espace nécessaire au code barres</code></div><div class="line number18 index17 alt1"><code class="php comments">//&nbsp;&nbsp;&nbsp; Zones Calmes (mini=10px) à gauche et à droite</code></div><div class="line number19 index18 alt2"><code class="php comments">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; des barres</code></div><div class="line number20 index19 alt1"><code class="php variable">$bc</code><code class="php plain">-&gt;setSize(80, 150, 10);</code></div><div class="line number21 index20 alt2"><code class="php spaces">&nbsp;</code>&nbsp;</div><div class="line number22 index21 alt1"><code class="php comments">// Texte sous les barres :</code></div><div class="line number23 index22 alt2"><code class="php comments">//&nbsp;&nbsp;&nbsp; 'AUTO' : affiche la valeur du codes barres</code></div><div class="line number24 index23 alt1"><code class="php comments">//&nbsp;&nbsp;&nbsp; '' : n'affiche pas de texte sous le code</code></div><div class="line number25 index24 alt2"><code class="php comments">//&nbsp;&nbsp;&nbsp; 'texte a afficher' : affiche un texte libre</code></div><div class="line number26 index25 alt1"><code class="php comments">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sous les barres</code></div><div class="line number27 index26 alt2"><code class="php variable">$bc</code><code class="php plain">-&gt;setText(</code><code class="php string">'AUTO'</code><code class="php plain">);</code></div><div class="line number28 index27 alt1"><code class="php spaces">&nbsp;</code>&nbsp;</div><div class="line number29 index28 alt2"><code class="php comments">// Si elle est appelée, cette méthode désactive</code></div><div class="line number30 index29 alt1"><code class="php comments">// l'impression du Type de code (EAN, C128...)</code></div><div class="line number31 index30 alt2"><code class="php variable">$bc</code><code class="php plain">-&gt;hideCodeType();</code></div><div class="line number32 index31 alt1"><code class="php spaces">&nbsp;</code>&nbsp;</div><div class="line number33 index32 alt2"><code class="php comments">// Couleurs des Barres, et du Fond au</code></div><div class="line number34 index33 alt1"><code class="php comments">// format '#rrggbb'</code></div><div class="line number35 index34 alt2"><code class="php variable">$bc</code><code class="php plain">-&gt;setColors(</code><code class="php string">'#123456'</code><code class="php plain">, </code><code class="php string">'#F9F9F9'</code><code class="php plain">);</code></div><div class="line number36 index35 alt1"><code class="php comments">// Type de fichier : GIF ou PNG (par défaut)</code></div><div class="line number37 index36 alt2"><code class="php variable">$bc</code><code class="php plain">-&gt;setFiletype(</code><code class="php string">'PNG'</code><code class="php plain">);</code></div><div class="line number38 index37 alt1"><code class="php spaces">&nbsp;</code>&nbsp;</div><div class="line number39 index38 alt2"><code class="php comments">// envoie l'image dans un fichier</code></div><div class="line number40 index39 alt1"><code class="php variable">$bc</code><code class="php plain">-&gt;writeBarcodeFile(</code><code class="php string">'barcode.png'</code><code class="php plain">);</code></div><div class="line number41 index40 alt2"><code class="php comments">// ou envoie l'image au navigateur</code></div><div class="line number42 index41 alt1"><code class="php comments">// $bc-&gt;showBarcodeImage();</code></div><div class="line number43 index42 alt2"><code class="php spaces">&nbsp;</code>&nbsp;</div><div class="line number44 index43 alt1"><code class="php comments">/* ***************************************** */</code></div></div></td></tr></tbody></table></div></div>
+<br>Cet exemple génère l'image de code barres suivante :
+<br><img src="./codes à barres • • • pitoo.com_files/barcode.png" style="margin:10px 0 0 195px; width:auto;">		<p></p>
+	</div>
+<div style="clear:left;"></div> 
+</div>
+<hr class="no_hr">
+<a name="article_11"></a>
+<div class="actu_detail rounded">
+<h1 class="titre rounded-top"><span>Licence</span></h1><div class="img blog_wide"><img src="./codes à barres • • • pitoo.com_files/page_11_A.jpg"><div style="clear:left;"></div></div>	<div class="corps">
+		<p class="txt">
+			pi_barcode est distribué sous licence GPL3
+<br>
+<br>[ GNU General Public License v3 ]
+<br>Vous êtes libre d'utiliser, modifier ou redistribuer cette bibliothèque à titre gratuit ou onéreux. Le code source doit obligatoirement accompagner toute diffusion. La mention de licence, le nom de l'auteur et des différentes versions ne doivent pas être altérés. Le droit de redistribuer est garanti seulement si l'utilisateur fournit le code source de la version modifiée. En outre, les copies distribuées, incluant les modifications, doivent être aussi sous les termes de la GPL.
+<br>
+<br>Consultez les termes détaillés de la licence :
+<br>Licence publique générale GNU (Wikipedia) : <a href="http://fr.wikipedia.org/wiki/Licence_publique_g%C3%A9n%C3%A9rale_GNU" target="_blank">fr.wikipedia.org</a> 
+<br>GNU General Public License : <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">www.gnu.org</a> 		</p>
+	</div>
+<div style="clear:left;"></div> 
+</div>
+<hr class="no_hr">
+						
+					</div>
+					
+					<div class="contenu_centre_centre">
+					</div>
+					
+					<div class="contenu_centre_droite">
+						
+<a name="article_9"></a>
+<div class="chapitre_detail ">
+<h1 class="titre2"><span>Téléchargement</span></h1><div class="img"><a href="https://www.pitoo.com/pi_barcode_download.php"><img src="./codes à barres • • • pitoo.com_files/page_9_B.jpg"></a></div><div style="clear:left;"></div> 
+</div>
+<hr class="no_hr">
+<a name="article_10"></a>
+<div class="chapitre_detail ">
+<h1 class="titre2"><span>Démo</span></h1><div style="clear:left;"></div><div id="bc_demo" class="edito">
+	<div id="bc_inner">
+		
+		<form id="barcode_f" name="barcode_f" method="post" action="https://www.pitoo.com/codes-a-barres-p3">
+			
+			<p class="double_dot">type :</p>
+			<select name="barcode[type]" id="type">
+				<option value="C128">code C128</option>
+				<option value="C128C">code C128C</option>
+				<option value="C25">code C25</option>
+				<option value="C25I">code C25I</option>
+				<option value="MSI">code MSI</option>
+				<option value="EAN" selected="">code EAN</option>
+				<option value="UPC">code UPC</option>
+				<option value="C39">code C39</option>
+				<option value="C11">code C11</option>
+				<option value="CODABAR">code CODABAR</option>
+				<option value="POSTNET">code POSTNET</option>
+				<option value="CMC7">code CMC7</option>
+				<option value="KIX">code KIX</option>
+			</select>
+			<label>
+				<input name="barcode[hideCodeType]" type="checkbox" id="hideCodeType" value="1" checked="">
+				cacher le type
+			</label>
+			
+			
+			<p class="double_dot">code :</p>
+			<input name="barcode[code]" type="text" id="code" value="123456789012">
+			<label>
+				<br>
+				<input name="barcode[text]" type="checkbox" id="text" value="1" checked="">
+			est affiché sous les barres </label>
+			
+			
+			<p class="double_dot">taille :</p>
+			<label>
+				<input name="barcode[height]" type="text" id="height" value="50" size="4" maxlength="4">
+				hauteur
+			</label>
+			<label>
+				<input name="barcode[width]" type="text" id="width" value="0" size="4" maxlength="4">
+				largeur min.
+				<br>
+			</label>
+			<label>
+				<input name="barcode[calmZone]" type="text" id="calmZone" value="10" size="3" maxlength="3">
+				zones calme
+			</label>
+			
+			<p class="double_dot">couleurs :</p>
+			<label>
+				#<input name="barcode[color]" type="text" id="color" value="000000" size="7" maxlength="6" style="background-color:#000000;color:#ffffff;">
+				barres
+			</label>
+			<label>
+				#<input name="barcode[bgcolor]" type="text" id="bgcolor" value="FFFFFF" size="7" maxlength="6" style="background-color:#FFFFFF;color:#000000;">
+				fond
+			</label>
+			
+			
+			<p class="double_dot">format :</p>
+			<label><input type="radio" name="barcode[fileType]" id="fileTypePNG" value="PNG" checked="">
+			PNG</label>
+			<label><input type="radio" name="barcode[fileType]" id="fileTypeGIF" value="GIF">
+	GIF</label>
+			<label><input type="radio" name="barcode[fileType]" id="fileTypeJPG" value="JPG">
+	JPG</label>
+			
+		</form>
+	
+		<hr class="noshade">
+		
+		<div class="previsu">
+			50 × 115 pixels<br>
+			image/png		</div>
+		
+		<div class="previsu">
+			<img src="./codes à barres • • • pitoo.com_files/barcode_test_1523639543.png" alt="code a barres" style="width:auto&#39;; ?&gt;;">
+		</div>
+	
+	</div>
+</div>
+<script>
+	$(function()
+	{
+		$('#type').change(function(){ $("#barcode_f").trigger('submit'); });
+		$('#hideCodeType').change(function(){ $("#barcode_f").trigger('submit'); });
+		$('#code').change(function(){ $("#barcode_f").trigger('submit'); });
+		$('#text').change(function(){ $("#barcode_f").trigger('submit'); });
+		$('#height').change(function(){ $("#barcode_f").trigger('submit'); });
+		$('#width').change(function(){ $("#barcode_f").trigger('submit'); });
+		$('#calmZone').change(function(){ $("#barcode_f").trigger('submit'); });
+		$('#color').change(function(){ $("#barcode_f").trigger('submit'); });
+		$('#bgcolor').change(function(){ $("#barcode_f").trigger('submit'); });
+		$('#fileTypePNG').change(function(){ $("#barcode_f").trigger('submit'); });
+		$('#fileTypeGIF').change(function(){ $("#barcode_f").trigger('submit'); });
+		$('#fileTypeJPG').change(function(){ $("#barcode_f").trigger('submit'); });
+		
+		/* attach a submit handler to the form */
+		$("#barcode_f").submit(function(event) {
+			
+			/* stop form from submitting normally */
+			event.preventDefault(); 
+			
+			/* Send the data using post and put the results in a div */
+			$.post( 'news_formats/barcode_demo.php', $("#barcode_f").serialize(),
+				function( data ) {
+					$( "#bc_demo" ).replaceWith( data );
+				}
+			);
+			
+		});
+	});
+</script>
+ 
+</div>
+<hr class="no_hr">
+<a name="article_6"></a>
+<div class="chapitre_detail ">
+<h1 class="titre2"><span>Terminologie</span></h1>	<div class="corps">
+		<p class="txt">
+			Définition de quelques termes utilisés pour qualifier les codes barres.
+<br>
+<br><span class="double_dot">1) MODULE : </span> "Plus petit commun multiple", il est la largeur nominale de la barre ou de l'espace le plus étroit.
+<br>
+<br><span class="double_dot">2) ELEMENT : </span> Un élément est tout simplement soit une barre, soit un espace. Il se définit par le nombre de modules qu'il comporte.
+<br>
+<br><span class="double_dot">3) CARACTERE : </span> Plusieurs éléments forment un caractère, selon une combinaison prédéfinie. Cette relation spaciale entre barres et espaces, adjacents ou interdépendants constitue la structure du code. Un caractère peut être une lettre, un chiffre ou un symbole. Il peut servir soit à la représentation d'une valeur, soit à l'organisation fonctionnelle du code (caractères de début et fin de lecture), soit comme contrôle.
+<br>Les caractères significatifs ont toujours le même nombre des mêmes éléments.
+<br>
+<br><span class="double_dot">4) RATIO : </span> C'est le rapport des largeurs entre les éléments larges et les éléments étroits (en général 3 pour1).
+<br>
+<br><span class="double_dot">5) DENSITE : </span> Elle est définie par le nombre de caractères inscrits sur une longueur linéaire donnée. Elle est fonction de la largeur du module et par le ratio.
+<br>
+<br><span class="double_dot">6) CONTINU : </span> Cela signifie que chaque caractère jouxte ses voisins (il commence par une barre et fini par un espace). Deux bornes encadrent le message codé : un caractère de début et un caractère de fin de lecture.
+<br>
+<br><span class="double_dot">6b) DISCONTINU : </span> Chaque caractère commence par une barre et fini par une barre, il y a toujours un intervalle (de largeur fixe ou variable) entre deux caraxtères adjacents.
+<br>
+<br><span class="double_dot">7) MARGES : </span> ou encore appelées zones calmes situées de part et d'autre du code. Elles doivent être exemptes de toute impression pour permettre la lecture du code.
+<br>
+<br><span class="double_dot">8) JEU DE CARACTERES : </span> liste exhaustive de tous les caractères admis par le code avec leurs valeurs binaires. Les éléments étroits sont notés "0" et les larges "1".
+<br>
+<br><span class="double_dot">9) CLE DE CONTROLE : </span> c'est un caractère qui est calculé en fonction des autres caractères significatifs du code et placé à la fin de celui-ci pour permettre un contrôle (automatique ou non) de la lecture.
+<br>		</p>
+	</div>
+<div style="clear:left;"></div> 
+</div>
+<hr class="no_hr">
+<a name="article_32"></a>
+<div class="chapitre_detail ">
+<h1 class="titre2"><span>Documentation</span></h1>	<div class="corps">
+		<p class="txt">
+			Un petit manuel issu de mon ancien site sur les différents codes à barres utilisés dans le script...
+<br>
+<br>		</p>
+	</div>
+<div style="clear:left;"></div><a href="https://www.pitoo.com/images/pagedoc_32.pdf" class="lien lien_pdf">manuel codes barres</a> 
+</div>
+<hr class="no_hr">
+                        
+												
+					</div>
+                
+                	<div style="clear:both"></div>
+                    
+                </div>
+
+			</div>
+			
+		</div> 
+	
+	</div>
+
+	<div id="footer">
+	<div id="footer_content">
+
+        <div id="footer_menu">
+        	<ul class="footer_menu_list">
+								<h4>ici...</h4>
+				<li><a href="https://www.pitoo.com/">accueil</a></li>
+				<li><a href="https://www.pitoo.com/portfolio-p2">portfolio</a></li>
+				<li><a href="https://www.pitoo.com/codes-a-barres-p3">codes à barres</a></li>
+				<li><a href="https://www.pitoo.com/rubiks-cube-p4">rubiks cube</a></li>
+				<li><a href="https://www.pitoo.com/about-me-p5">about me</a></li>
+				<li><a href="https://www.pitoo.com/work-around-b1">work'around</a></li>
+				<li><a href="https://www.pitoo.com/les-nerf-a-vif-b2">les nerfs à vif</a></li>
+				<li><a href="https://www.pitoo.com/contact">me contacter</a></li>
+            </ul>
+        	<ul class="footer_menu_list">
+								<h4>ailleurs...</h4>
+				<li><a href="http://www.cercyanes.com/" target="_blank">Cercyanes</a></li>
+				<li><a href="http://www.internetvista.com/fr/" target="_blank">Monitoring internetVista®</a></li>
+				<li><a href="https://www.pitoo.com/mon_tresor.php">Pour mon Trésor</a></li>
+				<li><a href="http://www.sandra-chevron-guerin.com/" target="_blank">Psychopraticienne thonon les bains troubles anxiété</a></li>
+				<li><a href="http://www.lamourvaincra.com/" target="_blank">L'Amour vaincra !</a></li>
+				<li><a href="http://www.arreter-de-fumer.com/" target="_blank">1270 jours (7/2/2013 -&gt; 1/8/2016)</a></li>
+				<li><a href="http://www.eleafworld.com/istick-pico-kit-firmware-upgradeable/" target="_blank">592 jours</a></li>
+            </ul>
+        </div>
+
+        <p class="copyright">
+        © 2018 <a href="https://www.pitoo.com/">pitoo</a>
+</p>
+
+	</div>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-212666-3']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+</div>
+
+
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>

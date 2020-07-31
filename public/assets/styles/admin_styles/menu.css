@@ -1,0 +1,31 @@
+/*pour drop down */
+#dropmenudiv{
+position:absolute;
+border:1px solid #;
+#border-bottom-width: 1;
+line-height:28px;
+z-index:100;
+font-family:"Arial Narrow";
+font-size : 15px;
+font-weight: normal;
+color:#333;
+}
+
+#dropmenudiv a{
+width: 100%;
+display: block;
+text-indent: 10px;
+border-bottom: 0px;//1px solid black;
+padding: 1px 0px;
+text-decoration: none;
+color: #FFF;
+font-weight: normal;
+background-color:#333;
+}
+
+#dropmenudiv a:hover{ /*hover background color*/
+background-color:#FF9900;
+color:#000;
+}
+/*fin du drop down*/
+

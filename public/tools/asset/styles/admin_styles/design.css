@@ -1,0 +1,244 @@
+/* CSS Document - Design */
+
+.bgSite {
+	background-color:#FFF;
+}
+
+/* ********************* */
+
+.bgHeader {
+	background-image:url(../imgs/img-bg-entete.png);
+	background-repeat:repeat-x;
+}
+
+.bgBody {
+}
+
+.bgBottom {
+}
+
+.bgFooter {
+	background-image:url(../imgs/img-bg-footer.png);
+	background-repeat:repeat-x;
+}
+
+/* ********************* */
+
+.bgHeaderCenter {
+	background-image:url(../imgs/img-banner-entete.png);
+	background-repeat:no-repeat;
+	
+}
+
+.bgBodyCenter {
+}
+
+.bgBottomCenter {
+}
+
+.bgFooterCenter {
+}
+
+/* ********************* */
+
+.bgPageHome {
+	background-color:#666;
+}
+
+.bgPageMenu {
+	background-color:#666;
+}
+
+/* ********************* */
+
+.bgMenu {
+	background-image:url(../imgs/img-bg-menu1.png);
+}
+
+.bgHeaderMenu {
+	background-image:url(../imgs/img-bg-header-menu.png);
+	background-repeat:repeat-y;
+}
+
+.bgtextzone1 {
+	background-image:url(../imgs/img-bg-text-zone1.png);
+}
+
+.bgtextzone2 {
+	background-image:url(../imgs/img-bg-text-zone2.png);
+}
+
+.bgtextmsg {
+	background-image:url(../imgs/img-bg-text-msg.png);
+}
+
+.bgMenu1 {
+	background-image:url(../imgs/img-bg-m1.png);
+	background-repeat:no-repeat;
+}
+
+.bgMenu2 {
+	background-image:url(../imgs/img-bg-m2.png);
+	background-repeat:no-repeat;
+}
+
+.bgMenu3 {
+	background-image:url(../imgs/img-bg-m3.png);
+	background-repeat:no-repeat;
+}
+
+.bgMenu4 {
+	background-image:url(../imgs/img-bg-m4.png);
+	background-repeat:no-repeat;
+}
+
+.bgMenu5 {
+	background-image:url(../imgs/img-bg-m5.png);
+	background-repeat:no-repeat;
+}
+
+/* ********************* */
+
+#znBanner {
+	background-color:#CCC;
+	height:66px;
+	width:980px;	
+}
+
+#znMenu {
+	background-color:#CCC;
+	height:44px;
+	width:980px;	
+}
+
+#menuNav li {
+	float:left;
+	width:120px;
+	height:44px;
+	background-color:#096;
+	text-align:center center;
+	vertical-align:middle;
+	border-left:1px black solid;
+	border-right:1px black solid;
+}
+
+/* ********************* */
+
+.puce1 {
+}
+
+.puce2 {
+}
+
+/* ********************* */
+
+.traitVOrange1 {
+	background-image:url(../imgs/img-bg-trait-v-orange1.png);
+	background-repeat:repeat-y;
+}
+
+.traitVOrange1b {
+	background-image:url(../imgs/img-bg-trait-v-orange1b.png);
+	background-repeat:repeat-y;
+}
+
+.traitVOrange2 {
+	background-image:;
+	background-repeat:repeat-y;
+}
+
+.traitVOrange2 {
+	background-image:url(../imgs/img-bg-trait-v-orange2b.png);
+	background-repeat:repeat-y;
+}
+
+.traitVVert1 {
+	background-image:url(../imgs/img-bg-trait-v-vert1.png);
+	background-repeat:repeat-y;
+}
+
+.traitVGrey1 {
+	background-image:url(../imgs/img-bg-trait-v-grey1.png);
+	background-repeat:repeat-y;
+}
+
+traitVGrey1b{
+	background-image:url(../imgs/img-bg-trait-v-grey1b.png);
+	background-repeat:repeat-y;
+}
+
+.traitHOrange1 {
+	background-image:url(../imgs/img-bg-trait-h-orange1.png);
+	background-repeat:repeat-x;
+}
+
+.traitHOrange2 {
+	background-image:url(../imgs/img-bg-trait-h-orange2.png);
+	background-repeat:repeat-x;
+}
+
+.traitHBlanc2 {
+	background-image:url(../imgs/img-bg-trait-h-blanc2.png);
+	background-repeat:repeat-x;
+}
+
+
+.bgOnglet {
+	background-image:url(../imgs/img-bg-onglet.png);
+	background-repeat:repeat-x;
+}
+
+.bgOngletA {
+	background-image:url(../imgs/img-bg-onglet-a.png);
+	background-repeat:no-repeat;
+}
+
+.bgOngletB {
+	background-image:url(../imgs/img-bg-onglet-b.png);
+	background-repeat:no-repeat;
+}
+
+/* ********************* */
+
+.divHeader {
+	
+}
+
+.divHeaderCentre {
+	position:relative;
+	width:980px;
+	height:262px;
+}
+
+.divZnConnexion {
+	position:absolute;
+	top:33px;
+	right:104px;
+	width:292px;
+	height:220px;
+	background-image:url(../imgs/img-bg-menu1.png);
+	border:1px solid #000;
+}
+
+.divZnUsermenu {
+	position:absolute;
+	top:35px;
+	right:-1px;
+	width:265px;
+	height:321px;
+	background-image:url(../imgs/img-bg-menu1.png);
+	border:1px solid #000;
+}
+
+.div1{
+width:200px;
+height:200px;
+background-color:#ff0000;
+border:2px dashed #000000;
+}
+.div2{
+width:200px;
+height:200px;
+background-color:#00ff00;
+border:2px dashed #000000;
+}

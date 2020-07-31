@@ -1,0 +1,523 @@
+
+/* CSS Document - Text */
+
+/* TEXT LINE SPACE ********************************************************/
+
+.lineSpaceNormal {
+    line-height:normal;
+}
+
+.lineSpaceRegular {
+    line-height:110%;
+}
+
+.lineSpaceSmall {
+    line-height:85%;
+}
+
+/* TEXT COLOR ***********************************************************/
+
+.txtColorBlack {
+    text-transform: none;
+    color: #000000;
+}
+.txtColorBlack a:link, .txtColorBlack a:visited , .txtColorBlack a:active {
+    color:#000000;
+    text-transform: none;
+    text-decoration:none;
+}
+.txtColorBlack a:hover {
+    color:#000000;
+    text-transform: none;
+    text-decoration:none;
+}
+
+/***/
+
+.txtColorWhite {
+    text-transform: none;
+    color: #FFFFFF;
+}
+.txtColorWhite a:link, .txtColorWhite a:visited , .txtColorWhite a:active {
+    color:#FFFFFF;
+    text-transform: none;
+    text-decoration:none;
+}
+.txtColorWhite a:hover {
+    color:#FFFFFF;
+    text-transform: none;
+    text-decoration:none;
+}
+
+/***/
+
+.txtLabelForm
+{
+    color: #006633;
+    font-weight: bold;
+}
+
+.txtColorGreen {
+    color: #006633;
+}
+
+.txtColorGreenDark
+{
+    color: #006633;
+}
+.txtColorGrey {
+    text-transform: none;
+    color: #999999;
+}
+.txtColorGrey a:link, .txtColorGrey a:visited , .txtColorGrey a:active {
+    color:#999999;
+    text-transform: none;
+    text-decoration:none;
+}
+.txtColorGrey a:hover {
+    color:#666666;
+    text-transform: none;
+    text-decoration:none;
+}
+
+/***/
+
+.txtColorGreyW {
+    text-transform: none;
+    color: #CCCCCC;
+}
+.txtColorGreyW a:link, .txtColorGreyW a:visited , .txtColorGreyW a:active {
+    color:#CCCCCC;
+    text-transform: none;
+    text-decoration:none;
+}
+.txtColorGreyW a:hover {
+    color:#CCCCCC;
+    text-transform: none;
+    text-decoration:none;
+}
+
+/***/
+
+.txtColorGreyD {
+    text-transform: none;
+    color: #666666;
+}
+.txtColorGreyD a:link, .txtColorGreyD a:visited , .txtColorGreyD a:active {
+    color:#666666;
+    text-transform: none;
+    text-decoration:none;
+}
+.txtColorGreyD a:hover {
+    color:#333333;
+    text-transform: none;
+    text-decoration:none;
+}
+
+/***/
+
+.txtColorDark {
+    text-transform: none;
+    color: #333333;
+}
+.txtColorDark a:link, .txtColorDark a:visited , .txtColorDark a:active {
+    color:#333333;
+    text-transform: none;
+    text-decoration:none;
+}
+.txtColorDark a:hover {
+    color:#000000;
+    text-transform: none;
+    text-decoration:none;
+}
+
+/***/
+
+.txtColorRed {
+    text-transform: none;
+    color: #FF3300;
+}
+.txtColorRed a:link, .txtColorRed a:visited , .txtColorRed a:active {
+    color:#FF3300;
+    text-transform: none;
+    text-decoration:none;
+}
+.txtColorRed a:hover {
+    color:#CC0000;
+    text-transform: none;
+    text-decoration:none;
+}
+
+/***/
+
+.txtColorBlue {
+    text-transform: none;
+    color: #00A3D9;
+}
+.txtColorBlue a:link, .txtColorBlue a:visited , .txtColorBlue a:active {
+    color:#00A3D9;
+    text-transform: none;
+    text-decoration:none;
+}
+.txtColorBlue a:hover {
+    color:#006DD9;
+    text-transform: none;
+    text-decoration:none;
+}
+
+/***/
+
+.txtColorBlue {
+    text-transform: none;
+    color: #009933;
+}
+.txtColorBlue a:link, .txtColorBlue a:visited , .txtColorBlue a:active {
+    color:#009933;
+    text-transform: none;
+    text-decoration:none;
+}
+.txtColorBlue a:hover {
+    color:#006633;
+    text-transform: none;
+    text-decoration:none;
+}
+
+/***/
+
+.txtColorBlueSoft {
+    text-transform: none;
+    color: #D8D8AF;
+}
+.txtColorBlueSoft a:link, .txtColorBlueSoft a:visited , .txtColorBlueSoft a:active {
+    color:#D8D8AF;
+    text-transform: none;
+    text-decoration:none;
+}
+.txtColorBlueSoft a:hover {
+    color:#D8D8AF;
+    text-transform: none;
+    text-decoration:none;
+}
+
+/***/
+
+.txtColorBlue2 {
+    text-transform: none;
+    font-size: 18px;
+    font-weight:bold;
+    color: #949449;
+}
+.txtColorBlue2 a:link, .txtColorBlue2 a:visited , .txtColorBlue2 a:active {
+    color:#949449;
+    font-size: 18px;
+    font-weight:bold;
+    text-transform: none;
+    text-decoration:none;
+}
+.txtColorBlue2 a:hover {
+    color:#949449;
+    font-size: 18px;
+    font-weight:bold;
+    text-transform: none;
+    text-decoration:none;
+}
+
+/***/
+
+.txtColorBlueD {
+    text-transform: none;
+    color: blue;
+}
+.txtColorBlueD a:link, .txtColorBlueD a:visited , .txtColorBlueD a:active {
+    color:#006633;
+    text-transform: none;
+    text-decoration:none;
+}
+.txtColorBlueD a:hover {
+    color:#003300;
+    text-transform: none;
+    text-decoration:none;
+}
+
+/***/
+
+.txtColorBlueL {
+    text-transform: none;
+    color: #00CC66;
+}
+.txtColorBlueL a:link, .txtColorBlueL a:visited , .txtColorBlueL a:active {
+    color:#00CC66;
+    text-transform: none;
+    text-decoration:none;
+}
+.txtColorBlueL a:hover {
+    color:#006633;
+    text-transform: none;
+    text-decoration:none;
+}
+
+/***/
+
+.txtColorOrange {
+    text-transform: none;
+    color: #FF6600;
+}
+.txtColorOrange a:link, .txtColorOrange a:visited , .txtColorOrange a:active {
+    color:#FF6600;
+    text-transform: none;
+    text-decoration:none;
+}
+.txtColorOrange a:hover {
+    color:#FF3300;
+    text-transform: none;
+    text-decoration:none;
+}
+
+/***/
+
+.txtColorOrangeD {
+    text-transform: none;
+    color: #FF3300;
+}
+.txtColorOrangeD a:link, .txtColorOrangeD a:visited , .txtColorOrangeD a:active {
+    color:#FF3300;
+    text-transform: none;
+    text-decoration:none;
+}
+.txtColorOrangeD a:hover {
+    color:#FF6600;
+    text-transform: none;
+    text-decoration:none;
+}
+
+
+/***/
+
+.txtColorViolet {
+    text-transform: none;
+    color: #C926FF;
+}
+
+.txtColorMaroon {
+    text-transform: none;
+    color: #800000;
+}
+.txtColorViolet a:link, .txtColorViolet a:visited , .txtColorViolet a:active {
+    color:#C926FF;
+    text-transform: none;
+    text-decoration:none;
+}
+.txtColorViolet a:hover {
+    color:#C926FF;
+    text-transform: none;
+    text-decoration:none;
+}
+
+/***/
+
+.txtColorActive {
+    text-transform: none;
+    font-size: 15px;
+    color: #949449;
+}
+.txtColorActive a:link, .txtColorActive a:visited , .txtColorActive a:active {
+    color:#949449;
+    font-size: 15px;
+    text-transform: none;
+    text-decoration:underline;
+}
+.txtColorActive a:hover {
+    color:#949449;
+    font-size: 15px;
+    text-transform: none;
+    text-decoration:overline;
+}
+
+/***/
+
+/*Txt Pagination*/
+
+.txtColorPagination {
+    text-transform: none;
+    text-decoration:none;
+    color: #949449;
+    font-weight:bold;
+}
+.txtColorPagination a:link, .txtColorPagination a:visited , .txtColorPagination a:active {
+    color:#333;
+    text-transform: none;
+    text-decoration:none;
+}
+.txtColorPagination a:hover {
+    color:#666;
+    text-transform: none;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/***********************************************************************/
+
+/* TEXT SIZE ***********************************************************/
+.txtLarge{
+    font-size:25px;
+}
+.txtSizeSmall {
+    font-size: 10px;
+}
+.txtSizeSmall a:link, .txtSizeSmall a:visited , .txtSizeSmall a:active {
+    font-size: 10px;
+}
+.txtSizeSmall a:hover {
+    font-size: 10px;
+}
+
+/***/
+
+.txtSizeNormal {
+    font-size: 13px;
+}
+.txtSizeNormal a:link, .txtSizeNormal a:visited , .txtSizeNormal a:active {
+    font-size: 13px;
+}
+.txtSizeNormal a:hover {
+    font-size: 13px;
+}
+
+/***/
+
+.txtSizeRegular {
+    font-size: 14px;
+}
+.txtSizeRegular a:link, .txtSizeRegular a:visited , .txtSizeRegular a:active {
+    font-size: 14px;
+}
+.txtSizeRegular a:hover {
+    font-size: 14px;
+}
+
+/***/
+
+.txtSizeMedium {
+    font-size: 17px;
+}
+.txtSizeMedium a:link, .txtSizeMedium a:visited , .txtSizeMedium a:active {
+    font-size: 17px;
+}
+.txtSizeMedium a:hover {
+    font-size: 17px;
+}
+
+/***/
+
+.txtSizeLarge {
+    font-size: 20px;
+}
+
+.txtSizeLarge2 {
+    font-size: 16px;
+}
+.txtSizeLarge a:link, .txtSizeLarge a:visited , .txtSizeLarge a:active {
+    font-size: 20px;
+}
+.txtSizeLarge a:hover {
+    font-size: 20px;
+}
+
+.txtSizeLargeStrong {
+    font-size: 20px;
+    font-weight:bold;
+}
+.txtSizeLargeStrong1 {
+    font-size: 25px;
+    font-weight:bold;
+}
+.txtSizeLargeStrong a:link, .txtSizeLargeStrong a:visited , .txtSizeLargeStrong a:active {
+    font-size: 20px;
+    font-weight:bold;
+}
+.txtSizeLargeStrong a:hover {
+    font-size: 20px;
+    font-weight:bold;
+}
+
+/***/
+
+.txtSizeXLarge {
+    font-size: 26px;
+}
+.txtSizeXLarge a:link, .txtSizeXLarge a:visited , .txtSizeXLarge a:active {
+    font-size: 26px;
+}
+.txtSizeXLarge a:hover {
+    font-size: 26px;
+}
+
+/***/
+
+.txtSizeXXLarge {
+    font-size: 32px;
+}
+.txtSizeXXLarge a:link, .txtSizeXXLarge a:visited , .txtSizeXXLarge a:active {
+    font-size: 32px;
+}
+.txtSizeXXLarge a:hover {
+    font-size: 32px;
+}
+
+/***/
+
+.txtSizeULarge {
+    font-size: 46px;
+}
+.txtSizeULarge a:link, .txtSizeULarge a:visited , .txtSizeULarge a:active {
+    font-size: 46px;
+}
+.txtSizeULarge a:hover {
+    font-size: 46px;
+}
+
+/***/
+
+.txtSizeUULarge {
+    font-size: 68px;
+}
+.txtSizeUULarge a:link, .txtSizeUULarge a:visited , .txtSizeUULarge a:active {
+    font-size: 68px;
+}
+.txtSizeUULarge a:hover {
+    font-size: 68px;
+}
+
+.size-12 { font-size: 12px; }
+
+.size-14 { font-size: 14px; }
+
+.size-16 { font-size: 16px; }
+
+.size-18 { font-size: 18px; }
+
+.size-21 { font-size: 21px; }
+
+.size-24 { font-size: 24px; }
+
+.size-36 { font-size: 36px; }
+
+.size-48 { font-size: 48px; }
+
+.size-60 { font-size: 60px; }
+
+.size-72 { font-size: 72px; }
+
+.size-84 { font-size: 84px; }
+
+.size-96 { font-size: 96px; }
+
+
+/***/
+
+.txtLineThrough {
+    text-decoration:line-through;
+}
+
+
+/************************************************************************/
